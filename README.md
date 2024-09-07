@@ -635,9 +635,7 @@ The above script will complete the following two things:  building a virtual env
  </tr>
 </tbody></table>
 
-
-## Cross Validation, Train and Test
-### Cross Validation:
+## Cross Validation:
 ### Mutation-Level Cross-Validation: [eg. S1131, S4169, S645]
 ```bash
 python ./cv2.py SKEMPI1_S1131.pkl SKEMPI2_S4169.pkl ABbind_S645.pkl --feature_path ./ Feature_S1131-S4169-S8338-S645/
@@ -652,11 +650,13 @@ python ./cv_one.py SKEMPI2_S4169.pkl --feature_path ./Feature_S1131-S4169-S8338-
 ```bash
 python ./cv_struc.py SKEMPI2_S8338.pkl --feature_path ./Feature_S1131-S4169-S8338-S645/
 ```
-### Train: [eg. S4191_train]
+## Train: 
+### Train on [eg. S4191_train]
 ```bash
 python ./train.py SKEMPI2_S4191_train.pkl --feature_path ./Feature/Feature_S4191/ --model_path ./ Blind_test/Train_Model/S4191_Model/
 ```
-### Test: [eg. S487_test]
+## Test: 
+### Test on [eg. S487_test]
 ```bash
 python ./test.py SKEMPI2_S487_test.pkl --feature_path ./Feature/Feature_S4191/ --model_path ./ Blind_test/Train_Model/S4191_Model/
 ```
